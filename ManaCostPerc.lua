@@ -338,7 +338,7 @@ local function getHelp()
                 type = "group",
                 order = 2,
                 width = "full",
-                args = gen(--createGroupDescription(--createGroupItems(
+                args = gen(
                     L["HELP.CONTENTPT"], {
                         { "name", L["Name of the Power Type: \"Mana\"."] },
                         { "cost", L["Number for spell base absolute power cost."] },
@@ -530,10 +530,11 @@ function ManaCostPerc:ProcessOnShow(tt, ...)
     local costs = getSpellCosts(id)
     local text = nil
 
-    if costs.name then
+    if not costs then
+        -- Do nothing
+    elseif costs.name then
         text = getManaCostText(costs)
-    elseif not db.disableColors and db.colorAllCosts
-                and costs and #costs > 0 then
+    elseif not db.disableColors and db.colorAllCosts and #costs > 0 then
         local parts, i = {}, 1
         for m in textLine:GetText():gmatch("[^\n]+") do
             parts[i] = wrapInColorTag(m, PowerBarColor[costs[math_min(i, #costs)]])
