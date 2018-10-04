@@ -8,7 +8,11 @@ local L = LibStub("AceLocale-3.0"):GetLocale(NAME)
 
 -- Some local functions/values
 local _G = _G
+local ipairs = ipairs
+local pairs = pairs
+local tinsert = tinsert
 local tonumber = tonumber
+local type = type
 local math_ceil = math.ceil
 local math_min = math.min
 local table_concat = table.concat
@@ -17,6 +21,7 @@ local UnitPowerMax = UnitPowerMax
 local BreakUpLargeNumbers = BreakUpLargeNumbers
 local GetSpellPowerCost = GetSpellPowerCost
 local PowerBarColor = PowerBarColor
+local GameTooltip = GameTooltip
 
 local powerTypeMana = Enum.PowerType.Mana
 
@@ -358,9 +363,8 @@ local function getHelp()
                 type = "group",
                 order = 3,
                 width = "full",
-                args = gen(--createGroupItems(--createGroupDescription(
+                args = gen(
                     L["HELP.CONTENTCOL"], {
-                        -- { "colGlobal", L_[""] }, -- Do not need
                         { "colName", L["Set text color to color of power type name color."] },
                         { "colCost", L["Set text color to color of spell base cost absolute number."] },
                         { "colPM", L["Set text color to color of spell cost in percent of maximum mana."] },
@@ -372,13 +376,6 @@ local function getHelp()
                     function(key)
                         return ("|cffffff00[%s:...]|r"):format(key)
                     end
-                    
-                    --[[text = {
-                        type = "description",
-                        name = L["HELP.CONTENTCOL"],
-                        order = 1,
-                        fontSize = "medium",
-                    },]]
                 )
             },
         }
