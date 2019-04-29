@@ -1,8 +1,8 @@
-## Interface: 80000
+## Interface: 80100
 ## Title: |cff8080ffMana|r Cost Percentage
 ## Notes: Shows mana usage as a percentage in a spell tooltip.
 ## Author: Rainmaker, phyber
-## Version: 8.0.1
+## Version: 8.0.2
 ## OptionalDeps: Ace3
 ## SavedVariables: ManaCostPercDB
 ## X-Website: https://www.wowace.com/projects/mana-cost-percentage
