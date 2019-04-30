@@ -1,4 +1,6 @@
-package-as: ManaCostPercent
+package-as: ManaCostPerc
+enable-nolib-creation: no
+
 ignore:
 	- ListStrings.ps1
 
