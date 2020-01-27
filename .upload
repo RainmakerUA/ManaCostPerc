@@ -1,20 +1,16 @@
 {
-	"apiRoot": "https://wow.curseforge.com/api/",
-	"token": "replace!:151623176520186612666519671219656818122416216512661523201716641722232065",
-	"libStore": "D:\\DEV\\Lua\\!Libs",
+	"author": "RainmakerUA",
+	"projectID": 320505,
 	"release": {
-		"projectID": 320505,
-		"author": "RainmakerUA",
 		"version": "unknown",
 		"type": "alpha",
 		"log": "No changes provided",
 		"date": "Recenly",
 		"gameVersions": [
-			"8.1.0",
-			"8.1.5",
-			"8.2.0",
-			"1.13.0",
-			"1.13.2"
+			"8.2.5",
+			"8.3.0",
+			"1.13.2",
+			"1.13.3"
 		]
 	},
 	"exclude": [
