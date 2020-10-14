@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90001
 ## Title: |cff8080ffMana|r Cost Percentage
 ## Notes: Shows mana usage as a percentage in a spell tooltip.
 ## Author: @@author@@
