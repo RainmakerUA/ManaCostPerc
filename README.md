@@ -1,5 +1,9 @@
 # ManaCostPerc
 
+# Attention!
+### This addon is not developed and maintained anymore!
+The functionality of this addon is now a part of **Tooltip Upgrades** addon of the same author (starting from version 1.1.0-final)
+
 ## Description
 
 This is an addon to customize the spell cost text in the spell tooltip. Allows to add mana cost percentage of total and current player mana. Aslo adds cost text coloring for spells using other power types (e.g. enegry, focus or runic power).
